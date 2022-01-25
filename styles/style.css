@@ -80,6 +80,20 @@ header img {
     display: flex;
     flex-direction: row;
 }
+
+.shellContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+button {
+    width: 50px;
+    text-align: center;
+
+}
+
 .shellImage {
     height: 200px;
 
