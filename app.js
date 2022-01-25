@@ -1,7 +1,4 @@
 // import functions and grab DOM elements
-const shellContainer1 = document.getElementById('shellContainer1');
-const shellContainer2 = document.getElementById('shellContainer2');
-const shellContainer3 = document.getElementById('shellContainer3');
 
 const coin1 = document.getElementById('coin-1');
 const coin2 = document.getElementById('coin-2');
