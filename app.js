@@ -32,14 +32,35 @@ function testGetCorrect() {
 }
 
 // Set event listeners
-function onButton(e) {
-    console.log('button pushed');
+function onButton(e, userGuess) {
+    // reset display
+    for (let coin of coins) {
+        coin.classList.remove('reveal');
+    }
+    // Get correct coin to reveal
+    const correctCoin = getCorrect();
+
+    // use user input to update state 
+    total++;
+    correctCoin.classList.add('reveal');
+
+    if (userGuess === correctCoin) {
+        wins++;
+    }
+    
+    // update DOM to reflect the new state
+    winsDisplay.innerText = wins;
+    totalDisplay.innerText = total;
+    lossesDisplay.innerText = total - wins; 
+
 }
 
-button1.addEventListener('click', onButton);
-button2.addEventListener('click', onButton);
-button3.addEventListener('click', onButton);
-
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+button1.addEventListener('click', (e) => {
+    onButton(e, coin1);
+});
+button2.addEventListener('click', (e) => {
+    onButton(e, coin2);
+});
+button3.addEventListener('click', (e) => {
+    onButton(e, coin3);
+});
