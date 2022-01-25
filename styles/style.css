@@ -98,11 +98,11 @@ header img {
     width: 100%;
 }
 
-.ball {
+.coin {
     display: none;
 }
 
-.ball.reveal {
+.coin.reveal {
     display: inline-block;
     height: 60px;
     width: 60px;
