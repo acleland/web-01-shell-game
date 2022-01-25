@@ -11,6 +11,9 @@ const totalDisplay = document.getElementById('totalDisplay');
 const winsDisplay = document.getElementById('winsDisplay');
 const lossesDisplay = document.getElementById('lossesDisplay');
 
+const button1 = document.getElementById('shell-1-button');
+const button2 = document.getElementById('shell-2-button');
+const button3 = document.getElementById('shell-3-button');
 
 // let state
 let total = 0;
@@ -28,9 +31,14 @@ function testGetCorrect() {
     }
 }
 
-testGetCorrect();
+// Set event listeners
+function onButton(e) {
+    console.log('button pushed');
+}
 
-
+button1.addEventListener('click', onButton);
+button2.addEventListener('click', onButton);
+button3.addEventListener('click', onButton);
 
   // get user input
   // use user input to update state 
