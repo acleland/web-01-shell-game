@@ -14,7 +14,8 @@ body {
     --footer-height: 25px;
     --img-size: 200px;
     
-    font-family: 'Titillium Web', sans-serif;
+    /* font-family: 'Titillium Web', sans-serif; */
+    font-family: 'Press Start 2P', cursive;
     background-color: var(--color2);
 }
 
@@ -48,14 +49,23 @@ header {
     box-shadow: var(--shadow);
 }
 
+.title {
+    margin-bottom: 30px;
+    justify-content: center;
+    text-align: center;
+}
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 2.0rem;
     font-weight: bold;
 }
 
 .gutter-right {
-    margin-right: 20px;
+    margin-right: 50px;
+}
+
+.gutter-bottom {
+    margin-bottom: 10px;
 }
 
 header img {
@@ -73,6 +83,9 @@ header img {
     align-items: center;
     align-content: center;
     justify-content: flex-end;
+    margin: 5px 15px 30px 15px;
+    width: 200px;
+    height:300px;
 }
 
 .shellImage {
@@ -105,6 +118,25 @@ header img {
 
 p {
     margin: var(--gutter);
+}
+
+.scores {
+    display: flex;
+    background-color: rgb(56, 56, 65);
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.score {
+    /* font-weight: bold; */
+}
+
+.winsDisplay {
+    color: rgb(162, 255, 22);
+}
+.lossesDisplay {
+    color: rgb(250, 67, 67);
 }
   
 footer {

@@ -4,9 +4,9 @@ const coin1 = document.getElementById('coin-1');
 const coin2 = document.getElementById('coin-2');
 const coin3 = document.getElementById('coin-3');
 
-const totalDisplay = document.getElementById('totalDisplay');
-const winsDisplay = document.getElementById('winsDisplay');
-const lossesDisplay = document.getElementById('lossesDisplay');
+const totalDisplay = document.getElementById('totalDisplayValue');
+const winsDisplay = document.getElementById('winsDisplayValue');
+const lossesDisplay = document.getElementById('lossesDisplayValue');
 
 const button1 = document.getElementById('shell-1-button');
 const button2 = document.getElementById('shell-2-button');

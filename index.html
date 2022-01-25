@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
@@ -16,9 +19,11 @@
     <main>
         <section class="main-section">
             <!-- <img class="main-logo" src="./assets/alchemy-logo.png" /> -->
-            <h2>
-                Play Our Shell Game!
-            </h2>
+            <div class="title">
+                <h2>Shell Game</h2>
+                <h3>Guess which shell contains the coin!</h3>
+            </div>
+            
                 <div class="shells">
                     <div id="shellContainer1" class="shellContainer">
                         <img src="./assets/shell.png" class="shellImage" alt="white clam shell">
@@ -43,14 +48,14 @@
                     </div>
                 </div>
                 <div class="scores">
-                    <p>WINS: <span id="winsDisplay">0</span></p>
-                    <p>LOSSES: <span id="lossesDisplay">0</span></p>
-                    <p>TOTAL: <span id="totalDisplay">0</span></p>
+                    <p class="score winsDisplay">WINS: <span id="winsDisplayValue" class="winsDisplay" >0</span></p>
+                    <p class="score lossesDisplay">LOSSES: <span id="lossesDisplayValue" class="lossesDisplay">0</span></p>
+                    <p class="score">TOTAL: <span id="totalDisplayValue" class="totalDisplay">0</span></p>
                 </div>
         </section>
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2022 Andrea Cleland</div>
+        <div class="copy gutter-right gutter-bottom">&copy; 2022 Andrea Cleland</div>
     </footer>
 
     <script type="module" src="./app.js"></script>
