@@ -22,26 +22,31 @@
         <section class="main-section">
             <img class="main-logo" src="./assets/alchemy-logo.png" />
             <h2>
-                Welcome to Shell Game!
+                Play Our Shell Game!
             </h2>
                 <div class="shells">
                     <div id="shellContainer1" class="shellContainer">
                         <img src="./assets/shell.png" class="shellImage" alt="white clam shell">
-                        <button id="shell-1-button">Guess</button>
+                        <div id="ball-1" class="ball reveal">
+                            <img class ="pennyImage" src="./assets/penny.jpg" alt="penny">
+                        </div>
+                        <button class="guess-button" id="shell-1-button">Guess</button>
                     </div>
                     <div id="shellContainer2" class="shellContainer">
                         <img src="./assets/shell.png" class="shellImage" alt="white clam shell">
+                        <div id="ball-2" class="ball"></div>
                         <button class="guess-button" id="shell-2-button">Guess</button>
                     </div>
                     <div id="shellContainer3" class="shellContainer">
                         <img src="./assets/shell.png" class="shellImage" alt="white clam shell">
-                        <button id="shell-3-button">Guess</button>
+                        <div id="ball-3" class="ball"></div>
+                        <button class="guess-button" id="shell-3-button">Guess</button>
                     </div>
                 </div>
         </section>
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
+        <div class="copy gutter-right">&copy; 2022 Andrea Cleland</div>
     </footer>
 
     <script type="module" src="./app.js"></script>
