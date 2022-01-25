@@ -76,9 +76,13 @@ header img {
     height: var(--header-height);
 }
 
+.shells {
+    display: flex;
+    flex-direction: row;
+}
 .shellImage {
-    height: var(--img-size);
-    
+    height: 200px;
+
 }
 
 p {
