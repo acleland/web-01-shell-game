@@ -22,12 +22,6 @@ function getCorrect() {
     return coins[index];
 }
 
-function testGetCorrect() {
-    for (let i = 0; i < 20; i++) {
-        console.log(getCorrect());
-    }
-}
-
 // Set event listeners
 function onButton(e, userGuess) {
     // reset display
