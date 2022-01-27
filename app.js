@@ -22,12 +22,22 @@ function getCorrect() {
     return coins[index];
 }
 
-// Set event listeners
-function onButton(e, userGuess) {
+function resetDisplay() {
     // reset display
     for (let coin of coins) {
         coin.classList.remove('reveal');
     }
+}
+
+function displayResults() {
+    winsDisplay.innerText = wins;
+    totalDisplay.innerText = total;
+    lossesDisplay.innerText = total - wins; 
+}
+
+// Set event listeners
+function onButton(e, userGuess) {
+    resetDisplay();
     // Get correct coin to reveal
     const correctCoin = getCorrect();
 
@@ -40,9 +50,7 @@ function onButton(e, userGuess) {
     }
     
     // update DOM to reflect the new state
-    winsDisplay.innerText = wins;
-    totalDisplay.innerText = total;
-    lossesDisplay.innerText = total - wins; 
+    displayResults();
 
 }
 
